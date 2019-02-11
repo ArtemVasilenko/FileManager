@@ -11,15 +11,15 @@ import UIKit
 class ViewController: UIViewController {
     
     var fileManager = FileManager.default
+    var url = URL(fileURLWithPath: "")
+    
     
     @IBOutlet var buttons: [UIButton]!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var labelText: UILabel!
     @IBOutlet var textFields: [UITextField]!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    fileprivate func layerStyle() {
         textFields[0].alpha = 0.8
         textFields[1].alpha = 0.8
         textView.alpha = 0.8
@@ -44,6 +44,12 @@ class ViewController: UIViewController {
         buttons[6].clipsToBounds = true
         buttons[7].layer.cornerRadius = 10
         buttons[7].clipsToBounds = true
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        layerStyle()
         
     }
 
