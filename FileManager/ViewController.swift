@@ -8,16 +8,67 @@
 
 import UIKit
 
+enum FileManagerEvents: Int {
+    case getInfo = 0
+    case clear
+    case load
+    case createDir
+    case deleteDir
+    case deleteFile
+    case write
+    case read
+}
+
 class ViewController: UIViewController {
     
+    
     var fileManager = FileManager.default
-    var url = URL(fileURLWithPath: "")
     
     
     @IBOutlet var buttons: [UIButton]!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var labelText: UILabel!
     @IBOutlet var textFields: [UITextField]!
+    
+    @IBAction func buttonPush(_ sender: UIButton) {
+        print(buttons.index(of: sender)!)
+        print(FileManagerEvents.clear.rawValue)
+    }
+    
+    func getUrl(path: String = "") -> URL {
+        var url = URL(fileURLWithPath: path)
+        do {
+            url = try fileManager.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true).appendingPathComponent(path)
+        } catch {
+            print(error)
+        }
+        
+        return url
+    }
+    
+    func getInfo() -> String {
+        let url = getUrl()
+        var filesList = [String]()
+        do {
+            filesList = try fileManager.contentsOfDirectory(atPath: url.path)
+        } catch {
+            print(error)
+        }
+        var getStringFormArrayStrings = String()
+        filesList.forEach() {
+            getStringFormArrayStrings += $0 + "\n"
+        }
+        return getStringFormArrayStrings
+    }
+    
+    func createDirectory(path: String = "MyDirectory") {
+        let url = getUrl(path: path)
+        do {
+            try fileManager.createDirectory(at: url, withIntermediateDirectories: true)
+        } catch {
+            print(error)
+        }
+    }
     
     fileprivate func layerStyle() {
         textFields[0].alpha = 0.8
@@ -48,11 +99,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        createDirectory()
+        print(getInfo())
         layerStyle()
         
     }
-
-
+    
+    
 }
 

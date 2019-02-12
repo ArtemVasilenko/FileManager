@@ -23,59 +23,83 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3B4-G7-iPc">
                                         <rect key="frame" x="0.0" y="0.0" width="155" height="32"/>
-                                        <color key="backgroundColor" red="0.47450980390000003" green="0.025591666779159708" blue="0.0015843539352684902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.66935679224196898" green="0.032336367807236664" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Get Info"/>
+                                        <connections>
+                                            <action selector="buttonPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="03u-tq-S0t"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blz-gl-ZcY">
                                         <rect key="frame" x="0.0" y="47" width="155" height="31.5"/>
-                                        <color key="backgroundColor" red="0.47450980390000003" green="0.025591666779159708" blue="0.0015843539352684902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.66935679224196898" green="0.032336367807236664" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Clear"/>
+                                        <connections>
+                                            <action selector="buttonPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XtD-Qp-jlO"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSK-Ma-Ev8">
                                         <rect key="frame" x="0.0" y="93.5" width="155" height="32"/>
-                                        <color key="backgroundColor" red="0.47450980390000003" green="0.025591666779159708" blue="0.0015843539352684902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.66935679224196898" green="0.032336367807236664" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Load"/>
+                                        <connections>
+                                            <action selector="buttonPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VHv-Uh-JX0"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocB-Qd-h37">
                                         <rect key="frame" x="0.0" y="140.5" width="155" height="31.5"/>
-                                        <color key="backgroundColor" red="0.47450980390000003" green="0.025591666779159708" blue="0.0015843539352684902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.66935679224196898" green="0.032336367807236664" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Create Dir"/>
+                                        <connections>
+                                            <action selector="buttonPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x5T-sM-las"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkm-VX-X2j">
                                         <rect key="frame" x="0.0" y="187" width="155" height="32"/>
-                                        <color key="backgroundColor" red="0.47450980390000003" green="0.025591666779159708" blue="0.0015843539352684902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.66935679224196898" green="0.032336367807236664" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Delete Dir"/>
+                                        <connections>
+                                            <action selector="buttonPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fM8-Wf-MtQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oi9-gA-ljP">
                                         <rect key="frame" x="0.0" y="234" width="155" height="31.5"/>
-                                        <color key="backgroundColor" red="0.47450980390000003" green="0.025591666779159708" blue="0.0015843539352684902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.66935679224196898" green="0.032336367807236664" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Delete File"/>
+                                        <connections>
+                                            <action selector="buttonPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oN1-tw-NXe"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DV5-s3-5js">
                                         <rect key="frame" x="0.0" y="280.5" width="155" height="32"/>
-                                        <color key="backgroundColor" red="0.47450980390000003" green="0.025591666779159708" blue="0.0015843539352684902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.66935679224196898" green="0.032336367807236664" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Write"/>
+                                        <connections>
+                                            <action selector="buttonPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y1O-rW-Ug9"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lj4-gO-VuG">
                                         <rect key="frame" x="0.0" y="327.5" width="155" height="31.5"/>
-                                        <color key="backgroundColor" red="0.47450980390000003" green="0.025591666779159708" blue="0.0015843539352684902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.66935679224196898" green="0.032336367807236664" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Read"/>
+                                        <connections>
+                                            <action selector="buttonPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qFD-wi-fXu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
