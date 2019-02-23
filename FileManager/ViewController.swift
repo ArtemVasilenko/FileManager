@@ -9,7 +9,7 @@
 import UIKit
 
 enum FileManagerEvents: Int {
-    case getInfo = 0
+    case getInfo
     case clear
     case load
     case createDir
@@ -19,11 +19,10 @@ enum FileManagerEvents: Int {
     case read
 }
 
-class ViewController: UIViewController {
-    
-    
+class ViewController: UIViewController, Helper {
     var fileManager = FileManager.default
     
+    @IBOutlet weak var resultLabel: UILabel!
     
     @IBOutlet var buttons: [UIButton]!
     @IBOutlet weak var textView: UITextView!
@@ -32,7 +31,25 @@ class ViewController: UIViewController {
     
     @IBAction func buttonPush(_ sender: UIButton) {
         print(buttons.index(of: sender)!)
-        print(FileManagerEvents.clear.rawValue)
+//        print(FileManagerEvents.clear.rawValue)
+        
+        
+        if let fileManagerEvent = FileManagerEvents(rawValue: buttons.index(of: sender)!) {
+            
+            
+            
+            switch fileManagerEvent {
+            case .getInfo: resultLabel.text? += getInfo()
+            case .clear: return
+            case .load: return
+            case .createDir: createDirectory()
+            case .deleteDir: return
+            case .deleteFile: return
+            case .write: return
+            case .read: return
+            }
+        }
+        
     }
     
     func getUrl(path: String = "") -> URL {
@@ -47,6 +64,7 @@ class ViewController: UIViewController {
     }
     
     func getInfo() -> String {
+//        print(getCurrentTime())
         let url = getUrl()
         var filesList = [String]()
         do {
@@ -58,7 +76,8 @@ class ViewController: UIViewController {
         filesList.forEach() {
             getStringFormArrayStrings += $0 + "\n"
         }
-        return getStringFormArrayStrings
+        return getCurrentTime() + " " + getStringFormArrayStrings
+        
     }
     
     func createDirectory(path: String = "MyDirectory") {
@@ -70,32 +89,32 @@ class ViewController: UIViewController {
         }
     }
     
-    fileprivate func layerStyle() {
-        textFields[0].alpha = 0.8
-        textFields[1].alpha = 0.8
-        textView.alpha = 0.8
-        textView.layer.cornerRadius = 10
-        textView.clipsToBounds = true
-        labelText.alpha = 0.8
-        labelText.layer.cornerRadius = 10
-        labelText.clipsToBounds = true
-        buttons[0].layer.cornerRadius = 10
-        buttons[0].clipsToBounds = true
-        buttons[1].layer.cornerRadius = 10
-        buttons[1].clipsToBounds = true
-        buttons[2].layer.cornerRadius = 10
-        buttons[2].clipsToBounds = true
-        buttons[3].layer.cornerRadius = 10
-        buttons[3].clipsToBounds = true
-        buttons[4].layer.cornerRadius = 10
-        buttons[4].clipsToBounds = true
-        buttons[5].layer.cornerRadius = 10
-        buttons[5].clipsToBounds = true
-        buttons[6].layer.cornerRadius = 10
-        buttons[6].clipsToBounds = true
-        buttons[7].layer.cornerRadius = 10
-        buttons[7].clipsToBounds = true
-    }
+    func layerStyle() {
+    textFields[0].alpha = 0.8
+    textFields[1].alpha = 0.8
+    textView.alpha = 0.8
+    textView.layer.cornerRadius = 10
+    textView.clipsToBounds = true
+    labelText.alpha = 0.8
+    labelText.layer.cornerRadius = 10
+    labelText.clipsToBounds = true
+    buttons[0].layer.cornerRadius = 10
+    buttons[0].clipsToBounds = true
+    buttons[1].layer.cornerRadius = 10
+    buttons[1].clipsToBounds = true
+    buttons[2].layer.cornerRadius = 10
+    buttons[2].clipsToBounds = true
+    buttons[3].layer.cornerRadius = 10
+    buttons[3].clipsToBounds = true
+    buttons[4].layer.cornerRadius = 10
+    buttons[4].clipsToBounds = true
+    buttons[5].layer.cornerRadius = 10
+    buttons[5].clipsToBounds = true
+    buttons[6].layer.cornerRadius = 10
+    buttons[6].clipsToBounds = true
+    buttons[7].layer.cornerRadius = 10
+    buttons[7].clipsToBounds = true
+}
     
     override func viewDidLoad() {
         super.viewDidLoad()
