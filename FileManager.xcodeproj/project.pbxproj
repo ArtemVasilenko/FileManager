@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AC31361122207EFA00AAC97C /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC31361022207EFA00AAC97C /* Helper.swift */; };
+		AC55A0EA222DA80300BD84C1 /* lec5.pdf in Resources */ = {isa = PBXBuildFile; fileRef = AC55A0E9222DA80300BD84C1 /* lec5.pdf */; };
 		D9F73B112211E309005CCF6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F73B102211E309005CCF6D /* AppDelegate.swift */; };
 		D9F73B132211E309005CCF6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F73B122211E309005CCF6D /* ViewController.swift */; };
 		D9F73B162211E309005CCF6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F73B142211E309005CCF6D /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		AC31361022207EFA00AAC97C /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		AC55A0E9222DA80300BD84C1 /* lec5.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = lec5.pdf; sourceTree = "<group>"; };
 		D9F73B0D2211E309005CCF6D /* FileManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9F73B102211E309005CCF6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9F73B122211E309005CCF6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		D9F73B0F2211E309005CCF6D /* FileManager */ = {
 			isa = PBXGroup;
 			children = (
+				AC55A0E9222DA80300BD84C1 /* lec5.pdf */,
 				D9F73B102211E309005CCF6D /* AppDelegate.swift */,
 				D9F73B122211E309005CCF6D /* ViewController.swift */,
 				AC31361022207EFA00AAC97C /* Helper.swift */,
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9F73B1B2211E30D005CCF6D /* LaunchScreen.storyboard in Resources */,
+				AC55A0EA222DA80300BD84C1 /* lec5.pdf in Resources */,
 				D9F73B182211E30D005CCF6D /* Assets.xcassets in Resources */,
 				D9F73B162211E309005CCF6D /* Main.storyboard in Resources */,
 			);

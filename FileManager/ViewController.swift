@@ -1,10 +1,4 @@
-//
-//  ViewController.swift
-//  FileManager
-//
-//  Created by Artem Karmaz on 2/11/19.
-//  Copyright © 2019 Artem Karmaz. All rights reserved.
-//
+
 
 import UIKit
 
@@ -35,8 +29,6 @@ class ViewController: UIViewController, Helper {
         
         
         if let fileManagerEvent = FileManagerEvents(rawValue: buttons.index(of: sender)!) {
-            
-            
             
             switch fileManagerEvent {
             case .getInfo: resultLabel.text? += getInfo()
